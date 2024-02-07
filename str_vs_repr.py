@@ -1,15 +1,16 @@
 class my_class():
     def __init__(self):
-        pass
+        self._name = "my class"
 
     def __str__(self):
-        return 'dunder str was called!'
+        return f'dunder str was called on {self._name}'
 
     def __repr__(self):
-        return 'dunder repr was called!'
+        return f'dunder repr was called on my_class({self._name})'
 
 
 obj = my_class()
-print(obj)
-print(str(obj))
-print(f'Hello.  {obj}')
+print(obj) # -> 'dunder str was called!'
+print(str(obj)) # -> 'dunder str was called!'
+print(f'{obj}') # -> 'dunder str was called!'
+print(repr(obj)) # -> 'dunder repr was called!
