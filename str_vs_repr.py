@@ -10,7 +10,7 @@ class my_class():
 
 
 obj = my_class()
-print(obj) # -> 'dunder str was called!'
-print(str(obj)) # -> 'dunder str was called!'
-print(f'{obj}') # -> 'dunder str was called!'
-print(repr(obj)) # -> 'dunder repr was called!
+print(obj) # -> 'dunder str was called on my class'
+print(str(obj)) # -> 'dunder str was called on my class'
+print(f'{obj}') # -> 'dunder str was called on my class'
+print(repr(obj)) # -> 'dunder repr was called on my_class(my class)'
